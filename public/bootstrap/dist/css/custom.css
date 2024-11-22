@@ -1,0 +1,303 @@
+body {
+    background-color: #fbfbfb;
+  }
+  @media (min-width: 991.98px) {
+    main {
+      padding-left: 240px;
+    }
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+  }
+  
+  @media (max-width: 991.98px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  .sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+
+
+
+  /* form */
+
+ /* From Uiverse.io by 0xnihilism */ 
+.card {
+    width: 300px;
+    padding: 20px;
+    background: #fff;
+    border: 6px solid #000;
+    box-shadow: 12px 12px 0 #000;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 17px 17px 0 #000;
+  }
+  
+  .card__title {
+    font-size: 32px;
+    font-weight: 900;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card__title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+    height: 3px;
+    background-color: #000;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover .card__title::after {
+    transform: translateX(0);
+  }
+  
+  .card__content {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .card__form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .card__form input {
+    padding: 10px;
+    border: 3px solid #000;
+    font-size: 16px;
+    font-family: inherit;
+    transition: transform 0.3s;
+    width: calc(100% - 26px); /* Adjust for padding and border */
+  }
+
+  .card__form select {
+    padding: 10px;
+    border: 3px solid #000;
+    font-size: 16px;
+    font-family: inherit;
+    transition: transform 0.3s;
+    width: calc(100% - 26px); /* Adjust for padding and border */
+  }
+
+  .card__form input:focus {
+    outline: none;
+    transform: scale(1.05);
+    background-color: #000;
+    color: #ffffff;
+  }
+  
+  .card__button {
+    border: 3px solid #000;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    left: 20%;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .card__button::before {
+    content: "Sure?";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105%;
+    background-color: #5ad641;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+  }
+  
+  .card__button:hover::before {
+    transform: translateY(0);
+  }
+  
+  .card__button:active {
+    transform: scale(0.95);
+  }
+  
+  @keyframes glitch {
+    0% {
+      transform: translate(2px, 2px);
+    }
+    25% {
+      transform: translate(-2px, -2px);
+    }
+    50% {
+      transform: translate(-2px, 2px);
+    }
+    75% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(2px, 2px);
+    }
+  }
+  
+  .glitch {
+    animation: glitch 0.3s infinite;
+  }
+  
+
+
+
+  /* images */
+
+  /* From Uiverse.io by csemszepp */ 
+/* .custum-file-upload {
+    height: 220px;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 20px;
+    cursor: pointer;
+    justify-content: center;
+    border: 2px dashed #e8e8e8;
+    background-color: #212121;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 48px 35px -48px #e8e8e8;
+  }
+  
+  .custum-file-upload .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .icon svg {
+    height: 80px;
+    fill: #e8e8e8;
+  }
+  
+  .custum-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custum-file-upload .text span {
+    font-weight: 400;
+    color: #e8e8e8;
+  }
+  
+  .custum-file-upload input {
+    display: none;
+  } */
+
+
+
+
+
+  .custum-file-upload {
+    height: 220px;
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    justify-content: center;
+    cursor: pointer;
+    border: 2px dashed #e8e8e8;
+    background-color: #212121;
+    background-size: cover;
+    background-position: center;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 48px 35px -48px #e8e8e8;
+    overflow: hidden; /* Ensure image does not overflow */
+}
+
+.custum-file-upload .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e8e8e8;
+    z-index: 1; /* Ensure text is above the background image */
+}
+
+.custum-file-upload input {
+    display: none; /* Hide the file input */
+}
+
+
+
+
+  
+
+
+  /* register */
+
+  @media (min-width: 1025px) {
+    .h-custom {
+    height: 100vh !important;
+    }
+  }
+
+
+
+  .carousel {
+    position: relative; /* Assure que le carrousel est le conteneur de positionnement pour les éléments enfants */
+}
+
+.cards {
+    position: absolute; /* Positionne la carte de manière absolue */
+    top: 90px; /* Ajustez selon où vous voulez que la carte apparaisse */
+    left:20rem; /* Ajustez selon où vous voulez que la carte apparaisse */
+    width: 60rem; /* Assure que la carte occupe toute la largeur du carrousel */
+    padding: 20px; /* Ajoute du padding autour du contenu de la carte */
+    background-color: rgba(9, 9, 9, 0.5); /* Fond noir avec opacité */
+    z-index: 10; /* Assure que la carte est au-dessus du carrousel */
+}
+
+
+
+
+ 
